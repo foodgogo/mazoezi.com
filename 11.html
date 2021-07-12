@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Get your delicious food with us.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Gogo| Order </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <!-- order section starts  -->
+
+    <section class="order" id="contactUs">
+
+        <h1 class="heading"><span>Order</span> now </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/orderpic.jpg" alt="">
+            </div>
+
+            <form action="" method="" >
+
+              <textarea  >Once you submit your order, it will be submitted on whatsapp and you will guide the deliverer where you live.THANK YOU SO MUCH. </textarea><br>
+
+              <textarea id="message" placeholder="Enter your message">Single BBQ Burger, Served With 500ml Pepsi. 16,000</textarea><br>
+
+              <a href="#" onclick="sendWa()" class="btn">Submit</a>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- order section ends -->
+
+    <script>
+        function sendWa(){
+            var message = document.getElementById("message").value
+            location.href = "https://wa.me/255624274879?text=" + message
+
+        }
+
+    </script>
+  </body>
+</html>
